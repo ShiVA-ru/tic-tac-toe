@@ -1,2 +1,23 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import TicTacToe from '$lib/components/TicTacToe.svelte';
+</script>
+
+<div class="container">
+	<h1>Tic-tac-toe</h1>
+	<p>Play with me</p>
+	<TicTacToe />
+</div>
+
+<style lang="scss">
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		max-width: fit-content;
+		margin: 0 auto;
+
+		color: var(--main-color);
+	}
+</style>
